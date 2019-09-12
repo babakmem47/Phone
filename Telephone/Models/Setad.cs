@@ -1,9 +1,13 @@
-﻿namespace Telephone.Models
+﻿using System.Collections.Generic;
+
+namespace Telephone.Models
 {
     public class Setad
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
+
+        public IList<Person> Persons { get; set; }
     }
 }
