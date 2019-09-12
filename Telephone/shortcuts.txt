@@ -1,0 +1,6 @@
+﻿
+
+
+	Save all files:				Alt + F , L
+
+	Close all files:			Alt + W , L

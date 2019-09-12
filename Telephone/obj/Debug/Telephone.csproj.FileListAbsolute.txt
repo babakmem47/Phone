@@ -55,3 +55,4 @@ E:\Projects\Phone\Telephone\obj\Debug\Telephone.dll
 E:\Projects\Phone\Telephone\obj\Debug\Telephone.pdb
 E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.InitialModel.resources
 E:\Projects\Phone\Telephone\obj\Debug\Telephone.csproj.GenerateResource.Cache
+E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.AddPersonAndSetadClasses.resources
