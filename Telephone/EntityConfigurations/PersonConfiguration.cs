@@ -7,7 +7,7 @@ using Telephone.Models;
 
 namespace Telephone.EntityConfigurations
 {
-    public class PersonConfiguration : EntityTypeConfiguration<Person>
+    public class PersonConfiguration : EntityTypeConfiguration<Individual>
     {
         public PersonConfiguration()
         {

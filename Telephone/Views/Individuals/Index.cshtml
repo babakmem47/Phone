@@ -1,0 +1,99 @@
+﻿@using Telephone.ViewModels
+@model IEnumerable<Telephone.Models.Individual>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>لیست اسامی افراد و شماره تماس</h2>
+<br />
+@*@Html.ActionLink("+", "New", "Persons", null, new { @class = "btn btn-primary", title = "افزودن فرد جدید"})*@
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span></button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add New Contact</h4>
+            </div>
+            <div class="modal-body">
+                @{
+                    var viewModel = new IndividualFormViewModel()
+                    {
+                        Name = "salam"
+                    };
+                }
+                @Html.Partial("_PersonForm", viewModel)
+            </div>
+            @*<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>*@
+        </div>
+
+    </div>
+</div>
+
+@*<div class="modal modal-body" id="myModal">
+        @{
+            var viewModel = new IndividualFormViewModel()
+            {
+                Name = "salam"
+            };
+        }
+        @Html.Partial("_PersonForm", viewModel)
+    </div>*@
+<br />
+<br />
+
+<table class="table table-bordered table-condensed table-striped table-hover">
+    <thead>
+    <tr>
+        <td>آی دی</td>
+        <td>نام شخص</td>
+        <td>تلفن مستقیم</td>
+        <td>تلفن داخلی</td>
+        <td>موبایل</td>
+        <td>محل کار</td>
+        <td>زمینه فعالیت</td>
+        <td>اداره</td>
+        <td>توضیحات</td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+            <td>@person.TelDirect</td>
+            <td>@person.TelDirect</td>
+            <td>@person.Mobile</td>
+            <td>@person.WorkPlace</td>
+            <td>@person.FieldOfActivity</td>
+            <td>@person.SetadId</td>
+            <td>@person.Description</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function() {
+            $(".form-group").click(function() {
+                console.log("hello");
+            });
+            $("#savebutton").on("click",
+                function() {
+                    var button = $(this);
+                    console.log(button);
+                })
+        });
+    </script>
+}

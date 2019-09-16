@@ -1,7 +1,7 @@
 ﻿
 namespace Telephone.Models
 {
-    public class Person
+    public class Individual
     {
         public int Id { get; set; }
 

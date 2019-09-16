@@ -8,6 +8,6 @@ namespace Telephone.Models
 
         public string Name { get; set; }
 
-        public IList<Person> Persons { get; set; }
+        public IList<Individual> Persons { get; set; }
     }
 }

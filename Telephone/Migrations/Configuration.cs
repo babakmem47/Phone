@@ -21,9 +21,9 @@ namespace Telephone.Migrations
             //
             //    context.People.AddOrUpdate(
             //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
+            //      new Individual { FullName = "Andrew Peters" },
+            //      new Individual { FullName = "Brice Lambson" },
+            //      new Individual { FullName = "Rowan Miller" }
             //    );
             //
         }

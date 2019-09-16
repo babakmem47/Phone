@@ -6,7 +6,7 @@ namespace Telephone.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Person> Persons { get; set; }
+        public DbSet<Individual> Persons { get; set; }
 
         public DbSet<Setad> Setads { get; set; }
 

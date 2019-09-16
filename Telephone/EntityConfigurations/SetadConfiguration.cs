@@ -13,7 +13,7 @@ namespace Telephone.EntityConfigurations
                 .IsRequired()
                 .HasMaxLength(30);
 
-            // Many-To-(0..1) with Person
+            // Many-To-(0..1) with Individual
             HasMany(s => s.Persons)
                 .WithOptional(p => p.Setad)
                 .WillCascadeOnDelete(false);

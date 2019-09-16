@@ -57,3 +57,6 @@ E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.InitialModel.resource
 E:\Projects\Phone\Telephone\obj\Debug\Telephone.csproj.GenerateResource.Cache
 E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.AddPersonAndSetadClasses.resources
 E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.AddFluentApiForPersonAndSetad.resources
+E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.PopulateSetad.resources
+E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.PopulateSetad1.resources
+E:\Projects\Phone\Telephone\obj\Debug\Telephone.Migrations.ChangePersonToIndividual.resources

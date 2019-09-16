@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*.modal-body {
+    overflow: visible;
+}*/
+
+/*.body.modal-open {
+    overflow: visible;
+    overflow-y: hidden;
+}*/
+

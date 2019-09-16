@@ -161,6 +161,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\IndividualsController.cs" />
     <Compile Include="EntityConfigurations\PersonConfiguration.cs" />
     <Compile Include="EntityConfigurations\SetadConfiguration.cs" />
     <Compile Include="Global.asax.cs">
@@ -178,15 +179,28 @@
     <Compile Include="Migrations\201909121950331_AddFluentApiForPersonAndSetad.Designer.cs">
       <DependentUpon>201909121950331_AddFluentApiForPersonAndSetad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909131217457_PopulateSetad.cs" />
+    <Compile Include="Migrations\201909131217457_PopulateSetad.Designer.cs">
+      <DependentUpon>201909131217457_PopulateSetad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909131228389_PopulateSetad1.cs" />
+    <Compile Include="Migrations\201909131228389_PopulateSetad1.Designer.cs">
+      <DependentUpon>201909131228389_PopulateSetad1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909161715243_ChangePersonToIndividual.cs" />
+    <Compile Include="Migrations\201909161715243_ChangePersonToIndividual.Designer.cs">
+      <DependentUpon>201909161715243_ChangePersonToIndividual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Individual.cs" />
     <Compile Include="Models\Setad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\IndividualFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -245,6 +259,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Individuals\Index.cshtml" />
+    <Content Include="Views\Individuals\PersonForm.cshtml" />
+    <Content Include="Views\Individuals\_PersonForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -265,6 +282,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909121950331_AddFluentApiForPersonAndSetad.resx">
       <DependentUpon>201909121950331_AddFluentApiForPersonAndSetad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909131217457_PopulateSetad.resx">
+      <DependentUpon>201909131217457_PopulateSetad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909131228389_PopulateSetad1.resx">
+      <DependentUpon>201909131228389_PopulateSetad1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909161715243_ChangePersonToIndividual.resx">
+      <DependentUpon>201909161715243_ChangePersonToIndividual.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
